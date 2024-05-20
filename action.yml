@@ -1,0 +1,13 @@
+name: 'binary comparison'
+description: 'Compare size of apps'
+inputs:
+  artifact_name:
+    description: 'Artifact name'
+    required: true
+  binary_name:
+    description: 'Binary file name'
+    required: true
+    default: '*.bin'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
